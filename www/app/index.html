@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Firefox OS Tester</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <!-- Write your application here -->
+    <h1>Firefox OS Tester</h1>
+    <p>A testing harness for Firefox OS feature. Choose from the tests below:</p>
+    <ul>
+		<li><a href="test-xhr-local.html">xhr - local</a></li> 
+		<li><a href="test-xhr-remote.html">xhr - remote</a></li> 
+		<li><a href="test-jsonp-local.html">jsonp - local</a></li>
+		<li><a href="test-jsonp-remote.html">jsonp - remote</a></li>
+    </ul>
+
+    
+    <!-- Using require.js, a module system for javascript, include the
+         js files. This loads "main.js", which in turn can load other
+         files, all handled by require.js:
+         http://requirejs.org/docs/api.html#jsfiles -->
+    <script type="text/javascript"
+            data-main="js/init.js"
+            src="js/lib/require.js"></script>
+  </body>
+</html>
